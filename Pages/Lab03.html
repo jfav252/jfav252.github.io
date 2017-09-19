@@ -4,16 +4,22 @@
 <meta charset="UTF-8">
 	<title>jfav252 GEOG774</title>
 	<link rel="stylesheet" type="text/css" href="JC.css">
+	<script src="https://api.tiles.mapbox.com/mapbox-gl-js/v0.39.1/mapbox-gl.js"></script>
+    <link href="https://api.tiles.mapbox.com/mapbox-gl-js/v0.39.1/mapbox-gl.css" rel="stylesheet" />
+    <style>
+        body { margin:0; padding:0; }
+        #map { position:absolute; top:0; bottom:0; width:100%; }
+    </style>
 	
 </head>
 
 <body>
-	<h1><b>GEOG 774 | JC Favier</b></h1>
+	<h1 style="padding-left: 30px;"><b>GEOG 774 | JC Favier</b></h1>
 	
 <nav class="navbar navbar-default">
 <div class="container-fluid">
 	<div class="navbar-header">
-		<a class="navbar-brand" href="../index.html">Home</a>
+		<a class="navbar-brand" href="../index.html" style="padding-left: 30px;">Home</a>
 	</div>
 
 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -28,8 +34,307 @@
 </nav>
 
 <div>
-	<h2><b>Lab 3</b></h2>
- 	<p> This page will eventually be updated to display content from Lab 03</p>
+	<h2 style="padding-left: 30px;"><b>Lab 3</b></h2>
+ 	<p style="padding-left: 30px;"> This page will eventually be updated to display content from Lab 03</p>
+</div>
+<div style="width:1900px">
+	<div style="padding-left: 30px;">
+	<div id="map1" style="width: 900px; height: 850px; float:left;"> 
+		<script>
+			mapboxgl.accessToken = "pk.eyJ1IjoiamNmYXZpZXIiLCJhIjoiY2o2cHE4b3FiMDF0cjMzbzJuc2hjaGE0byJ9.5tNY2HXv9SzB-8FSoc1-cg";
+			var map1 = new mapboxgl.Map({ 
+			container: "map1",
+			style: "mapbox://styles/jcfavier/cj6zqy8o91rau2rmbruswxq4f", 
+			center: [172.53, -41.07], 
+			zoom: 5,
+			}); 
+		</script>
+		</div>
+	</div>	
+	<div style="padding-right: 30px;">
+		<div id="map2" style="width: 900px; height: 850px; float:right;"> 
+		<script>
+			mapboxgl.accessToken = "pk.eyJ1IjoiamNmYXZpZXIiLCJhIjoiY2o2cHE4b3FiMDF0cjMzbzJuc2hjaGE0byJ9.5tNY2HXv9SzB-8FSoc1-cg";
+			var map2 = new mapboxgl.Map({ 
+			container: "map2",
+			style: "mapbox://styles/jcfavier/cj7o58nggavhh2uqori4xv91x", 
+			center: [172.53, -41.07], 
+			zoom: 5,
+			}); 
+
+			map2.on("load", function () {
+				map2.addSource("greatwalksplan", {
+					type: "vector",
+					url: "mapbox://jcfavier.cj6prs2xd02em2xqpddtn0k2z-7vref",
+				});
+
+				map2.addLayer({
+					"id": "greatwalksplan",
+					"type": "line",
+					"source": "greatwalksplan",
+					"source-layer": "greatwalksplan",
+					"layout": {
+						"visibility": "visible", 
+						"line-join": "round", 
+						"line-cap": "round"
+					},
+					"paint": {
+						'line-color': "#FF0000",
+						'line-width': 2	
+					}
+				});
+
+				map2.setLayerZoomRange("greatwalksplan", 8, 22);
+			});
+
+			map2.on("load", function () {
+				map2.addSource("markers", {
+					"type": "geojson",
+					"data": {
+					  "type": "FeatureCollection",
+					  "features": [
+						{
+						  "type": "Feature",
+						  "properties": {
+							"title": "Tongariro Northern Crossing"
+						  },
+						  "geometry": {
+							"type": "Point",
+							"coordinates": [
+							  175.5951690673828,
+							  -39.19767322113453
+							]
+						  }
+						},
+						{
+						  "type": "Feature",
+						  "properties": {
+							"title": "Lake Waikaremoana"
+						  },
+						  "geometry": {
+							"type": "Point",
+							"coordinates": [
+							  176.99352264404297,
+							  -38.80975079723835
+							]
+						  }
+						},
+						{
+						  "type": "Feature",
+						  "properties": {
+							"title": "Abel Tasman Coast Track"
+						  },
+						  "geometry": {
+							"type": "Point",
+							"coordinates": [
+							  173.04153442382812,
+							  -40.86731458364795
+							]
+						  }
+						},
+						{
+						  "type": "Feature",
+						  "properties": {
+							"title": "Heapy Track"
+						  },
+						  "geometry": {
+							"type": "Point",
+							"coordinates": [
+							  172.20331192016602,
+							  -40.89372665500941
+							]
+						  }
+						},
+						{
+						  "type": "Feature",
+						  "properties": {
+							"title": "Milford Track"
+						  },
+						  "geometry": {
+							"type": "Point",
+							"coordinates": [
+							  167.772216796875,
+							  -44.802301245528206
+							]
+						  }
+						},
+						{
+						  "type": "Feature",
+						  "properties": {
+							"title": "Routeburn Track"
+						  },
+						  "geometry": {
+							"type": "Point",
+							"coordinates": [
+							  168.16909790039062,
+							  -44.7642868079012
+							]
+						  }
+						},
+						{
+						  "type": "Feature",
+						  "properties": {
+							"title": "Kepler Track"
+						  },
+						  "geometry": {
+							"type": "Point",
+							"coordinates": [
+							  167.51266479492188,
+							  -45.398449976304086
+							]
+						  }
+						},
+						{
+						  "type": "Feature",
+						  "properties": {
+							"title": "Rakiura Track"
+						  },
+						  "geometry": {
+							"type": "Point",
+							"coordinates": [
+							  168.06060791015625,
+							  -46.86793745591878
+							]
+						  }
+						},
+						{
+						  "type": "Feature",
+						  "properties": {
+							"title": "Tongariro Northern Crossing"
+						  },
+						  "geometry": {
+							"type": "Point",
+							"coordinates": [
+							  175.5951690673828,
+							  -39.19767322113453
+							]
+						  }
+						},
+						{
+						  "type": "Feature",
+						  "properties": {
+							"title": "Lake Waikaremoana"
+						  },
+						  "geometry": {
+							"type": "Point",
+							"coordinates": [
+							  176.99352264404297,
+							  -38.80975079723835
+							]
+						  }
+						},
+						{
+						  "type": "Feature",
+						  "properties": {
+							"title": "Abel Tasman Coast Track"
+						  },
+						  "geometry": {
+							"type": "Point",
+							"coordinates": [
+							  173.04153442382812,
+							  -40.86731458364795
+							]
+						  }
+						},
+						{
+						  "type": "Feature",
+						  "properties": {
+							"title": "Heapy Track"
+						  },
+						  "geometry": {
+							"type": "Point",
+							"coordinates": [
+							  172.20331192016602,
+							  -40.89372665500941
+							]
+						  }
+						},
+						{
+						  "type": "Feature",
+						  "properties": {
+							"title": "Milford Track"
+						  },
+						  "geometry": {
+							"type": "Point",
+							"coordinates": [
+							  167.772216796875,
+							  -44.802301245528206
+							]
+						  }
+						},
+						{
+						  "type": "Feature",
+						  "properties": {
+							"title": "Routeburn Track"
+						  },
+						  "geometry": {
+							"type": "Point",
+							"coordinates": [
+							  168.16909790039062,
+							  -44.7642868079012
+							]
+						  }
+						},
+						{
+						  "type": "Feature",
+						  "properties": {
+							"title": "Kepler Track"
+						  },
+						  "geometry": {
+							"type": "Point",
+							"coordinates": [
+							  167.51266479492188,
+							  -45.398449976304086
+							]
+						  }
+						},
+						{
+						  "type": "Feature",
+						  "properties": {
+							"title": "Rakiura Track"
+						  },
+						  "geometry": {
+							"type": "Point",
+							"coordinates": [
+							  168.06060791015625,
+							  -46.86793745591878
+							]
+						  }
+						}
+					  ]
+					}	
+				});
+
+
+			map2.addLayer({
+				"id": "markers",
+				"type": "symbol",
+				"source": "markers",
+				"layout": {
+					"icon-image": "star-11",
+					"text-field": "{title}",
+					"text-font": ["Open Sans Semibold", "Arial Unicode MS Bold"],
+					"text-offset": [0, 0.6],
+					"text-size": 8,
+					"text-anchor": "top" 
+					}
+			});
+		});
+
+			map2.on('click', function (e) {
+				var features = map2.queryRenderedFeatures(e.point, { layers: ['markers'] }); if (features.length) {
+					map2.flyTo({center: features[0].geometry.coordinates, zoom: 10}); 
+				}
+			});
+
+			map2.on('mousemove', function (e) {
+				var features = map2.queryRenderedFeatures(e.point, { layers: ['markers'] });
+				map2.getCanvas().style.cursor = features.length ? 'pointer' : ''; 
+			});
+
+	</script>
+	</div>
+</div>
 </div>
 
 </body>
