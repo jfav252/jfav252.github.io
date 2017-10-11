@@ -87,7 +87,7 @@
 				  function styleFeature(feature) {
 			var low = [151, 83, 34];   // color of mag 1.0
 			var high = [5, 69, 54];  // color of mag 6.0 and above
-			var minMagnitude = 0.0;
+			var minMagnitude = 0.1;
 			var maxMagnitude = 4;
 
 			// fraction represents where the value sits between the min and max
@@ -115,7 +115,7 @@
 			var high = [5, 69, 54];  // color of mag 6.0 and above
 			var minMagnitude = 1
 			;
-			var maxMagnitude = 4.5;
+			var maxMagnitude = 4;
 
 			// fraction represents where the value sits between the min and max
 			var fraction = (Math.min(feature.getProperty('magnitude'), maxMagnitude) - minMagnitude) /
