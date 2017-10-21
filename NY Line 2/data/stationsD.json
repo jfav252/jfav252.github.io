@@ -1,0 +1,271 @@
+var stationsD_json = {
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "Station_NameD": "231st St",
+        "Disability": "d"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.904834,
+          40.878856
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station_NameD": "Dyckman St",
+        "Disability": "d"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.925536,
+          40.860531
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station_NameD": "96th St",
+        "Disability": "d"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.972323,
+          40.793919
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station_NameD": "72nd St",
+        "Disability": "d"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.98197,
+          40.778453
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station_NameD": "66th St-Lincoln Center",
+        "Disability": "d"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.982209,
+          40.77344
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station_NameD": "59th St-Columbus Circle",
+        "Disability": "d"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.981736,
+          40.768296
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station_NameD": "Times Square-42nd St",
+        "Disability": "d"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.986229,
+          40.755983
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station_NameD": "34th St",
+        "Disability": "d"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.991057,
+          40.750373
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station_NameD": "Chambers St",
+        "Disability": "d"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.009266,
+          40.715478
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station_NameD": "South Ferry",
+        "Disability": "d"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.013664,
+          40.702068
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station_NameD": "Atlantic Av",
+        "Disability": "d"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.97689,
+          40.68446
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station_NameD": "Borough Hall",
+        "Disability": "d"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.989998,
+          40.693219
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station_NameD": "Fulton St",
+        "Disability": "d"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.006571,
+          40.709416
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station_NameD": "135th St",
+        "Disability": "d"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.94077,
+          40.814229
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station_NameD": "Church Av",
+        "Disability": "d"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.949575,
+          40.650843
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station_NameD": "Flatbush Av-Brooklyn College",
+        "Disability": "d"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.947642,
+          40.632836
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station_NameD": "East 180th St",
+        "Disability": "d"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.873488,
+          40.841894
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station_NameD": "Simpson St",
+        "Disability": "d"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.893064,
+          40.824073
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station_NameD": "Utica Av",
+        "Disability": "d"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.932942,
+          40.668897
+        ]
+      }
+    }
+  ]
+}

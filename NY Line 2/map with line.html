@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>NYC Subway</title>
+	<script src="http://d3js.org/d3.v4.min.js" charset="utf-8"></script>
+	<script src="data/nyc.json"></script>
+	<script src="data/stations.json"></script>
+	<script src="data/stationsD.json"></script>
+	<script src="data/1 Train.json"></script>
+	<script src="data/2 Train.json"></script>
+	<script src="data/3 Train.json"></script>
+	
+	<style>
+		body {
+			position: absolute;
+			font-family: "Proxima Nova", "Montserrat", sans-serif;
+		}
+		h1, {
+			position: absolute;
+			left: 10px;
+			font-size: 1.3em;
+			font-weight: 100;
+		}
+		h2 {
+			position: absolute;
+			top: 30px;
+			font-size: 1em;
+		}
+		.hover {
+			fill: yellow;   
+		}
+		#sliderContainer {
+			text-align: center;
+			position: relative;
+			top: 600px;
+		}
+		#toggleContainer {
+			text-align: center;
+			position: relative;
+			top: 500px;
+			left: 450px;
+		}
+		/* The switch - the box around the slider */
+		.switch {
+		  position: relative;
+		  display: inline-block;
+		  width: 60px;
+		  height: 34px;
+		}
+
+		/* Hide default HTML checkbox */
+		.switch input {display:none;}
+
+		/* The slider */
+		.slider {
+		  position: absolute;
+		  cursor: pointer;
+		  top: 0;
+		  left: 0;
+		  right: 0;
+		  bottom: 0;
+		  background-color: #ccc;
+		  -webkit-transition: .4s;
+		  transition: .4s;
+		}
+
+		.slider:before {
+		  position: absolute;
+		  content: "";
+		  height: 26px;
+		  width: 26px;
+		  left: 4px;
+		  bottom: 4px;
+		  background-color: white;
+		  -webkit-transition: .4s;
+		  transition: .4s;
+		}
+
+		input:checked + .slider {
+		  background-color: #900;
+		}
+
+		input:focus + .slider {
+		  box-shadow: 0 0 1px #900;
+		}
+
+		input:checked + .slider:before {
+		  -webkit-transform: translateX(26px);
+		  -ms-transform: translateX(26px);
+		  transform: translateX(26px);
+		}
+
+		/* Rounded sliders */
+		.slider.round {
+		  border-radius: 34px;
+		}
+
+		.slider.round:before {
+		  border-radius: 50%;
+		}
+		
+		.map {
+			margin-top: auto;
+		}
+	</style>
+</head>
+<body>
+	<!-- Page elements and content go here. -->
+	
+	
+	<h1><b>NYC Subway: Line 1 Accessibility</b></h1>
+	<h2 style="padding-top: 30px"></h2>
+	
+	<div id="toggleContainer" style=" float: right">
+			<table>
+			   <tr>
+					<td><label class="switch">
+						<input id="1_Line_toggle" type="checkbox">
+						<div class="slider round"></div>
+					</label></td>
+					<td>Line 1</td>
+				</tr>
+				<tr>
+					<td><label class="switch">
+						<input id="2_Line_toggle" type="checkbox">
+						<div class="slider round"></div>
+					</label></td>
+					<td>Line 2</td>
+				</tr>
+				<tr>
+					<td><label class="switch">
+						<input id="3_Line_toggle" type="checkbox">
+						<div class="slider round"></div>
+					</label></td>
+					<td>Line 3</td>
+				</tr>
+				<tr>
+					<td><label class="switch">
+						<input id="AllStations_toggle" type="checkbox">
+						<div class="slider round"></div>
+					</label></td>
+					<td>All Stations</td>
+				</tr>
+				
+			</table>
+	</div>
+	
+	
+	<div class="map" style="margin-top: -500px;">
+		<script>
+		// Width and Height of the whole visualization
+		var width = 750;
+		var height = 850;
+
+		// Create SVG
+		var svg = d3.select( "body" )
+			.append( "svg" )
+			.attr( "width", width )
+			.attr( "height", height );
+
+		// Append empty placeholder g element to the SVG
+		// g will contain geometry elements
+		var g = svg.append( "g" );
+
+		var albersProjection = d3.geoAlbers()
+			.scale( 150000 )
+			.rotate( [73.9, 0] )
+			.center( [0, 40.75] )
+			.translate( [width/2,height/2] );
+
+		var geoPath = d3.geoPath()
+			.projection( albersProjection );
+
+		g.selectAll( "path" )
+			.data( boroughs_json.features )
+			.enter()
+			.append( "path" )
+			.attr( "fill", "#ccc" )
+			.attr( "stroke", "#ffffff")
+			.attr( "d", geoPath );
+
+
+
+		// add stations Station_Name
+
+		var stations = svg.append( "g" );
+
+		stations.selectAll( "path" )
+			.data( stations_json.features )
+			.enter()
+			.append( "path" )
+			.attr( "fill", "red" )
+			.attr( "stroke", "white" )
+			.attr( "d", geoPath )
+			.attr( "class", "stations")
+			.attr( "visibility", "hidden")
+			.on("mouseover", function(d){
+				d3.select("h2").text(d.properties.Station_Name);
+				d3.select(this).attr("class","stations hover");
+			})
+			.on("mouseout", function(d){
+				d3.select("h2").text("");
+				d3.select(this).attr("class","stations");
+			});
+			
+
+		//line 1 add
+
+		var OneTrain = svg.append( "g" );
+
+		OneTrain.selectAll( "path" )
+			.data( OneTrain_json.features )
+			.enter()
+			.append( "path" )
+			.attr( "d", geoPath )
+			.style('fill', 'none')
+			.style('stroke', 'red')
+			.style('stroke-opacity', 0.75)
+			.style('stroke-width', 2)
+			.attr( "class", "line1")
+			.attr( "visibility", "hidden");
+
+
+
+		//line 2 add
+
+		var TwoTrain = svg.append( "g" );
+
+		TwoTrain.selectAll( "path" )
+			.data( TwoTrain_json.features )
+			.enter()
+			.append( "path" )
+			.attr( "d", geoPath )
+			.style('fill', 'none')
+			.style('stroke', 'red')
+			.style('stroke-opacity', 0.75)
+			.style('stroke-width', 2)
+			.attr( "class", "line2")
+			.attr( "visibility", "hidden");
+
+		//line 3 add
+
+		var ThreeTrain = svg.append( "g" );
+
+		ThreeTrain.selectAll( "path" )
+			.data( ThreeTrain_json.features )
+			.enter()
+			.append( "path" )
+			.attr( "d", geoPath )
+			.style('fill', 'none')
+			.style('stroke', 'red')
+			.style('stroke-opacity', 0.75)
+			.style('stroke-width', 2)
+			.attr( "class", "line3")
+			.attr( "visibility", "hidden");
+
+		//switches
+
+		var AllStationsCheckbox = document.querySelector('input[id="AllStations_toggle"]');
+		var Line1Checkbox = document.querySelector('input[id="1_Line_toggle"]');
+		var Line2Checkbox = document.querySelector('input[id="2_Line_toggle"]');
+		var Line3Checkbox = document.querySelector('input[id="3_Line_toggle"]');
+		var StationsDCheckbox = document.querySelector('input[id="StationsD_toggle"]');
+
+		AllStationsCheckbox.onchange = function() {
+		  if(this.checked) {
+			d3.selectAll(".stations").attr("visibility", "visible");
+		  } else {
+			d3.selectAll(".stations").attr("visibility", "hidden");
+		  }
+		};
+
+		Line1Checkbox.onchange = function() {
+		  if(this.checked) {
+			d3.selectAll(".line1").attr("visibility", "visible");
+		  } else {
+			d3.selectAll(".line1").attr("visibility", "hidden");
+		  }
+		};
+
+		Line2Checkbox.onchange = function() {
+		  if(this.checked) {
+			d3.selectAll(".line2").attr("visibility", "visible");
+		  } else {
+			d3.selectAll(".line2").attr("visibility", "hidden");
+		  }
+		};
+
+		Line3Checkbox.onchange = function() {
+		  if(this.checked) {
+			d3.selectAll(".line3").attr("visibility", "visible");
+		  } else {
+			d3.selectAll(".line3").attr("visibility", "hidden");
+		  }
+		};
+
+
+	</script>
+	</div>
+	
+		
+</body>
+</html>

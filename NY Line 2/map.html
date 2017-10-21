@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Mapping with D3</title>
+	<script src="http://d3js.org/d3.v4.min.js" charset="utf-8"></script>
+	<script src="data/nyc.json"></script>
+	<script src="data/stations.json"></script>
+	<script src="data/line.json"></script>
+	
+	<style>
+		body {
+			position: absolute;
+			font-family: "Proxima Nova", "Montserrat", sans-serif;
+		}
+		h1, h2 {
+			position: absolute;
+			left: 10px;
+			font-size: 1.3em;
+			font-weight: 100;
+		}
+		h2 {
+			top: 30px;
+			font-size: 1em;
+		}
+		.hover {
+			fill: yellow;   
+		}
+		#sliderContainer {
+			text-align: center;
+			position: relative;
+			top: 600px;
+		}
+
+	</style>
+</head>
+<body>
+	<!-- Page elements and content go here. -->
+	<h1>NYC Subway: Line 1 Accessibility</h1>
+	<h2></h2>
+	<div id="sliderContainer">
+		<input id="timeslide" type="range" min="0" max="5" value="0" step="1"/><br>
+		<span id="range">Door</span>
+	</div>
+	<script>
+		// Width and Height of the whole visualization
+		var width = 1200;
+		var height = 900;
+
+		// Create SVG
+		var svg = d3.select( "body" )
+			.append( "svg" )
+			.attr( "width", width )
+			.attr( "height", height );
+
+		// Append empty placeholder g element to the SVG
+		// g will contain geometry elements
+		var g = svg.append( "g" );
+		
+		var albersProjection = d3.geoAlbers()
+			.scale( 100000 )
+			.rotate( [74.0060, 0] )
+			.center( [0, 40.7128] )
+			.translate( [width/2,height/2] );
+		
+		var geoPath = d3.geoPath()
+    		.projection( albersProjection );
+		
+		g.selectAll( "path" )
+			.data( boroughs_json.features )
+			.enter()
+			.append( "path" )
+			.attr( "fill", "#ccc" )
+			.attr( "stroke", "#333")
+			.attr( "d", geoPath );
+		
+		// add stations Station_Name
+		
+		var stations = svg.append( "g" );
+
+		stations.selectAll( "path" )
+			.data( stations_json.features )
+			.enter()
+			.append( "path" )
+			.attr( "fill", "#900" )
+			.attr( "stroke", "#999" )
+			.attr( "d", geoPath )
+			.attr( "class", "stations")
+			.on("mouseover", function(d){
+			d3.select("h2").text(d.properties.Station_Name);
+			d3.select(this).attr("class","station hover");
+			})
+			.on("mouseout", function(d){
+				d3.select("h2").text("");
+				d3.select(this).attr("class","stations");
+			});
+		
+		//lines
+		
+		d3.json("line.json", function(error, routes) {	
+						
+		var lines = container.append("svg")
+				.attr("id", "line")
+				.style("width", width + "px")
+				.style("height", height + "px")
+				.selectAll(".brgh")
+				.data(topojson.object(lines, lines.properties.name).geometries)
+				.enter().append("path")
+				.attr("d", path);
+
+		});
+		//switches
+		
+		var inputValue = null;
+		var entrance_type = ["Door","Easement","Elevator","Escalator","Ramp","Stair"];
+		
+		// when the input range changes update the value 
+		d3.select("#timeslide").on("input", function() {
+			update(+this.value);
+		});
+
+		// update the fill of each SVG of class "incident" with value
+		function update(value) {
+			document.getElementById("range").innerHTML=entrance_type[value];
+			inputValue = entrance_type[value];
+			d3.selectAll(".stations")
+				.attr("fill", dateMatch);
+		}
+
+		function dateMatch(data, value) {
+			var d = new Date(data.properties.Entrance_Type);
+			var m = month[d.getValue()];
+			if (inputValue == m) {
+				this.parentElement.appendChild(this);
+				return "red";
+			} else {
+				return "#999";
+			};
+		}
+	</script>	
+</body>
+</html>
