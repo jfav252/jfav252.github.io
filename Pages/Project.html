@@ -156,43 +156,40 @@
 						<input id="1_Line_toggle" type="checkbox">
 						<div class="slider round"></div>
 					</label></td>
-					<td><img src="75px-NYCS-bull-trans-1.png" width="50" height="50"></td>
+					<td><img src="../../../NY Line 2/75px-NYCS-bull-trans-1.png" width="50" height="50"></td>
 				</tr>
 				<tr>
 					<td><label class="switch">
 						<input id="2_Line_toggle" type="checkbox">
 						<div class="slider round"></div>
 					</label></td>
-					<td><img src="NYCS-bull-trans-2.png" width="50" height="50"></td>
+					<td><img src="../../../NY Line 2/NYCS-bull-trans-3.png" width="50" height="50"></td>
 				</tr>
 				<tr>
 					<td><label class="switch">
 						<input id="3_Line_toggle" type="checkbox">
 						<div class="slider round"></div>
 					</label></td>
-					<td><img src="NYCS-bull-trans-3.png" width="50" height="50"></td>
+					<td><img src="../../../NY Line 2/NYCS-bull-trans-3.png" width="50" height="50"></td>
 				</tr>
 				<tr>
 					<td><label class="switch">
 						<input id="AllStations_toggle" type="checkbox">
 						<div class="slider round"></div>
 					</label></td>
-					<td><img src="512px-MTA_NYC_logo.png" width="40" height="40"></td>
+					<td><img src="../../../NY Line 2/512px-MTA_NYC_logo.png" width="40" height="40"></td>
 				</tr>
 				<tr>
 					<td><label class="switch">
 						<input id="StationsD_toggle" type="checkbox">
 						<div class="slider round"></div>
 					</label></td>
-					<td><img src="Wheelchair_symbol.png" width="45" height="45"></td>
+					<td><img src="../../../NY Line 2/Wheelchair_symbol.png" width="45" height="45"></td>
 				</tr>
 				
 			</table>
 		</div>
 	</div>
-	
-		
-	
 	
 	<div id="left-div" style="background-color: aqua">
 		<div id="map">
@@ -226,52 +223,6 @@
 				.append( "path" )
 				.attr( "fill", "#ccc" )
 				.attr( "d", geoPath );
-
-
-
-			// add stations Station_Name
-
-			var stations = svg.append( "g" );
-
-			stations.selectAll( "path" )
-				.data( stations_json.features )
-				.enter()
-				.append( "path" )
-				.attr( "fill", "red" )
-				.attr( "stroke", "white" )
-				.attr( "d", geoPath )
-				.attr( "class", "stations")
-				.attr( "visibility", "hidden")
-				.on("mouseover", function(d){
-					d3.select("h2").text(d.properties.Station_Name);
-					d3.select(this).attr("class","stations hover");
-				})
-				.on("mouseout", function(d){
-					d3.select("h2").text("");
-					d3.select(this).attr("class","stations");
-				});
-
-			//
-
-			var stations = svg.append( "g" );
-
-			stations.selectAll( "path" )
-				.data( stationsD_json.features )
-				.enter()
-				.append( "path" )
-				.attr( "fill", "#48A9DF" )
-				.attr( "stroke", "white" )
-				.attr( "d", geoPath )
-				.attr( "class", "stationsD")
-				.attr( "visibility", "hidden")
-				.on("mouseover", function(d){
-					d3.select("h2").text(d.properties.Station_NameD);
-					d3.select(this).attr("class","stationsD hover");
-				})
-				.on("mouseout", function(d){
-					d3.select("h2").text("");
-					d3.select(this).attr("class","stationsD");
-				});
 
 			//line 1 add
 
@@ -322,6 +273,50 @@
 				.style('stroke-width', 2)
 				.attr( "class", "line3")
 				.attr( "visibility", "hidden");
+				
+			// add stations Station_Name
+
+			var stations = svg.append( "g" );
+
+			stations.selectAll( "path" )
+				.data( stations_json.features )
+				.enter()
+				.append( "path" )
+				.attr( "fill", "red" )
+				.attr( "stroke", "white" )
+				.attr( "d", geoPath )
+				.attr( "class", "stations")
+				.attr( "visibility", "hidden")
+				.on("mouseover", function(d){
+					d3.select("h2").text(d.properties.Station_Name);
+					d3.select(this).attr("class","stations hover");
+				})
+				.on("mouseout", function(d){
+					d3.select("h2").text("");
+					d3.select(this).attr("class","stations");
+				});
+
+			//
+
+			var stations = svg.append( "g" );
+
+			stations.selectAll( "path" )
+				.data( stationsD_json.features )
+				.enter()
+				.append( "path" )
+				.attr( "fill", "#48A9DF" )
+				.attr( "stroke", "white" )
+				.attr( "d", geoPath )
+				.attr( "class", "stationsD")
+				.attr( "visibility", "hidden")
+				.on("mouseover", function(d){
+					d3.select("h2").text(d.properties.Station_NameD);
+					d3.select(this).attr("class","stationsD hover");
+				})
+				.on("mouseout", function(d){
+					d3.select("h2").text("");
+					d3.select(this).attr("class","stationsD");
+				});
 
 			//switches
 
