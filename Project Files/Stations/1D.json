@@ -1,0 +1,131 @@
+var OnestationsD_json = {
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "Station_Name": "231st St",
+        "D": "D"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.904834,
+          40.878856
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station_Name": "Dyckman St",
+        "D": "D"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.925536,
+          40.860531
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station_Name": "96th St",
+        "D": "D"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.972323,
+          40.793919
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station_Name": "72nd St",
+        "D": "D"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.98197,
+          40.778453
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station_Name": "66th St-Lincoln Center",
+        "D": "D"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.982209,
+          40.77344
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station_Name": "59th St-Columbus Circle",
+        "D": "D"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.981929,
+          40.768247
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station_Name": "Times Square-42nd St",
+        "D": "D"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.986754,
+          40.754672
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station_Name": "34th St",
+        "D": "D"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.991057,
+          40.750373
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station_Name": "Chambers St",
+        "D": "D"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.009266,
+          40.715478
+        ]
+      }
+    }
+  ]
+}

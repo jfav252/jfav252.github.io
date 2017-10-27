@@ -1,49 +1,47 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<meta charset="UTF-8">
-	<title>jfav252 GEOG774</title>
-    <link rel="stylesheet" type="text/css" href="JC.css">
-    <script src="http://d3js.org/d3.v4.min.js" charset="utf-8"></script>
-	<script src="../Project Files/Base Map/nyc.json"></script>
-	<script src="../Project Files/Lines/1 Train.json"></script>
-	<script src="../Project Files/Lines/2 Train.json"></script>
-	<script src="../Project Files/Lines/3 Train.json"></script>
-	<script src="../Project Files/Lines/4 Train.json"></script>
-	<script src="../Project Files/Lines/5 Train.json"></script>
-	<script src="../Project Files/Lines/6 Train.json"></script>
-	<script src="../Project Files/Lines/7 Train.json"></script>
-	<script src='../Project Files/Stations/1.json'></script>
-	<script src='../Project Files/Stations/1D.json'></script>
-	<script src='../Project Files/Stations/2.json'></script>
-	<script src='../Project Files/Stations/2D.json'></script>
-	<script src='../Project Files/Stations/3.json'></script>
-	<script src='../Project Files/Stations/3D.json'></script>
-	<script src='../Project Files/Stations/4.json'></script>
-	<script src='../Project Files/Stations/4D.json'></script>
-	<script src='../Project Files/Stations/5.json'></script>
-	<script src='../Project Files/Stations/5D.json'></script>
-	<script src='../Project Files/Stations/6.json'></script>
-	<script src='../Project Files/Stations/6D.json'></script>
-	<script src='../Project Files/Stations/7.json'></script>
-	<script src='../Project Files/Stations/7D.json'></script>
+	<title>NYC Subway</title>
+	<script src="http://d3js.org/d3.v4.min.js" charset="utf-8"></script>
+	<script src="data/nyc.json"></script>
+	<script src="data/1 Train.json"></script>
+	<script src="data/2 Train.json"></script>
+	<script src="data/3 Train.json"></script>
+	<script src="data/4 Train.json"></script>
+	<script src="data/5 Train.json"></script>
+	<script src="data/6 Train.json"></script>
+	<script src="data/7 Train.json"></script>
+	<script src="../../../Lines/1D.json"></script>
+	<script src="../../../Lines/2D.json"></script>
+	<script src="../../../Lines/3D.json"></script>
+	<script src="../../../Lines/4D.json"></script>
+	<script src="../../../Lines/5D.json"></script>
+	<script src="../../../Lines/6D.json"></script>
+	<script src="../../../Lines/7D.json"></script>
+	<script src="../../../Lines/1.json"></script>
+	<script src="../../../Lines/2.json"></script>
+	<script src="../../../Lines/3.json"></script>
+	<script src="../../../Lines/4.json"></script>
+	<script src="../../../Lines/5.json"></script>
+	<script src="../../../Lines/6.json"></script>
+	<script src="../../../Lines/7.json"></script>
+	
 	
 	<style>
-		.map {
-			background-color: "white";
+		body {
+			position: absolute;
+			font-family: "Proxima Nova", "Montserrat", sans-serif;
 		}
 		h1, {
 			position: absolute;
 			left: 10px;
 			font-size: 1.3em;
 			font-weight: 100;
-			font-family: "Proxima Nova", "Montserrat", sans-serif;
 		}
 		h2 {
 			position: absolute;
-			top: 50px;
+			top: 30px;
 			font-size: 1em;
-			font-family: "Proxima Nova", "Montserrat", sans-serif;
 		}
 		.hover {
 			fill: yellow;   
@@ -119,32 +117,26 @@
 		  border-radius: 50%;
 		}
 		
+		.left-div {
+			float: left;
+			width: 100px;
+			height: 20px;
+			margin-right: 8px;
+		}
+		.right-div {
+			float: right;
+			margin-left: 108px;
+			margin-top: -100px;
+		}
+		
 	</style>
 </head>
-<h1><b>GEOG 774 | JC Favier</b></h1>
-<nav class="navbar navbar-default">
-	<div class="container-fluid">
-		<div class="navbar-header">
-			<a class="navbar-brand" href="../index.html">Home</a>
-		</div>
-
-	<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-		<ul align="center" class="nav navbar-nav">
-			<li><a href="Lab02.html">Lab 02</a></li>
-			<li><a href="Lab03.html">Lab 03</a></li>
-			<li><a href="Lab04.html">Lab 04</a></li>
-			<li><a href="Lab05.html">Lab 05</a></li>
-			<li><a href="Project.html">Project</a></li>
-		</ul>
-	</div>
-</nav>
 <body>
-	<h1><b>Disability Access on the New York Subway (Lines 1 to 7)</b></h1>
-	<h3>The map below looks at the distribution of stations that have disability access along lines 1 to 7 of the New York Subway. This has been made using <a href="https://d3js.org/">D3.js</a> whereas the toggles on the right-side has been made using html.</h3>
-	<h3>To make visible each line can be done using the toggles on the side of the map. By hovering over each station, this will show the station's name. Stations with disability access has been highlighted in blue whilst other staions along the line has been represented in their respective line colours.</h3>
-	<h3>The data used in this map has been collected from <a href="https://data.ny.gov">New York State Open Data</a> and <a href="https://opendata.cityofnewyork.us">New York City Open Data</a>. Images sources from <a href="https://commons.wikimedia.org/wiki/New_York_City_Subway_bullets">Wikimedia Commons</a>.</h3>
+	<!-- Page elements and content go here. -->
 	
-	<h2 style="padding-top: 350px"></h2>
+	
+	<h1><b>NYC Subway: Line 1 Accessibility</b></h1>
+	<h2 style="padding-top: 30px"></h2>
 	
 	<div id="right-div">
 		<div id="toggleContainer">
@@ -154,54 +146,57 @@
 						<input id="1_Line_toggle" type="checkbox">
 						<div class="slider round"></div>
 					</label></td>
-					<td><img src="../Project Files/Images/75px-NYCS-bull-trans-1.png" width="50" height="50"></td>
+					<td><img src="75px-NYCS-bull-trans-1.png" width="50" height="50"></td>
 				</tr>
 				<tr>
 					<td><label class="switch">
 						<input id="2_Line_toggle" type="checkbox">
 						<div class="slider round"></div>
 					</label></td>
-					<td><img src="../Project Files/Images/NYCS-bull-trans-2.png" width="50" height="50"></td>
+					<td><img src="NYCS-bull-trans-2.png" width="50" height="50"></td>
 				</tr>
 				<tr>
 					<td><label class="switch">
 						<input id="3_Line_toggle" type="checkbox">
 						<div class="slider round"></div>
 					</label></td>
-					<td><img src="../Project Files/Images/NYCS-bull-trans-3.png" width="50" height="50"></td>
+					<td><img src="NYCS-bull-trans-3.png" width="50" height="50"></td>
 				</tr>
 				<tr>
 					<td><label class="switch">
 						<input id="4_Line_toggle" type="checkbox">
 						<div class="slider round"></div>
 					</label></td>
-					<td><img src="../Project Files/Images/NYCS-bull-trans-4.png" width="40" height="40"></td>
+					<td><img src="75px-NYCS-bull-trans-1.png" width="50" height="50"></td>
 				</tr>
 				<tr>
 					<td><label class="switch">
 						<input id="5_Line_toggle" type="checkbox">
 						<div class="slider round"></div>
 					</label></td>
-					<td><img src="../Project Files/Images/NYCS-bull-trans-5.png" width="40" height="40"></td>
+					<td><img src="75px-NYCS-bull-trans-1.png" width="50" height="50"></td>
 				</tr>
 				<tr>
 					<td><label class="switch">
 						<input id="6_Line_toggle" type="checkbox">
 						<div class="slider round"></div>
 					</label></td>
-					<td><img src="../Project Files/Images/NYCS-bull-trans-6.png" width="40" height="40"></td>
+					<td><img src="75px-NYCS-bull-trans-1.png" width="50" height="50"></td>
 				</tr>
 				<tr>
 					<td><label class="switch">
 						<input id="7_Line_toggle" type="checkbox">
 						<div class="slider round"></div>
 					</label></td>
-					<td><img src="../Project Files/Images/NYCS-bull-trans-7.png" width="40" height="40"></td>
+					<td><img src="75px-NYCS-bull-trans-1.png" width="50" height="50"></td>
 				</tr>
 				
 			</table>
 		</div>
 	</div>
+	
+		
+	
 	
 	<div id="left-div" >
 		<div>
@@ -234,6 +229,7 @@
 				.enter()
 				.append( "path" )
 				.attr( "fill", "#ccc" )
+				.attr( "stroke", "#ffffff")
 				.attr( "d", geoPath );
 				
 			//line 1 add
@@ -742,5 +738,7 @@
 		</script>
 		</div>
 	</div>
+	
+		
 </body>
 </html>

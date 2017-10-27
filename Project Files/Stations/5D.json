@@ -1,0 +1,159 @@
+var FivestationsD_json = {
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "Station_Name": "East 180th St",
+        "": "d"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.873488,
+          40.841894
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station_Name": "125th St",
+        "": "d"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.937594,
+          40.804138
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station_Name": "Grand Central",
+        "": "d"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.979189,
+          40.752769
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station_Name": "14th St-Union Square",
+        "": "d"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.989951,
+          40.734673
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station_Name": "Fulton St",
+        "": "D"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.006571,
+          40.709416
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station_Name": "Bowling Green",
+        "": "d"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.014065,
+          40.704817
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station_Name": "Borough Hall",
+        "": "d"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.989998,
+          40.693219
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station_Name": "Atlantic Av",
+        "": "d"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.97689,
+          40.68446
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station_Name": "Bergen St",
+        "": "d"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.975098,
+          40.680829
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station_Name": "Church Av",
+        "": "d"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.949575,
+          40.650843
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station_Name": "Flatbush Av-Brooklyn College",
+        "": "d"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.947642,
+          40.632836
+        ]
+      }
+    }
+  ]
+}

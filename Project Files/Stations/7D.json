@@ -1,0 +1,117 @@
+var SevenstationsD_json = {
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "Station_Name": "Flushing-Main St",
+        "": "D"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.83003,
+          40.7596
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station_Name": "Junction Blvd",
+        "": "d"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.869527,
+          40.749145
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station_Name": "Broadway-74th St",
+        "": "d"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.891394,
+          40.746848
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station_Name": "Woodside Av-61st St",
+        "": "d"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.902984,
+          40.74563
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station_Name": "45 Rd-Court House Sq",
+        "": "d"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.945264,
+          40.747023
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station_Name": "Grand Central",
+        "": "d"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.979189,
+          40.752769
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station_Name": "5th Av",
+        "": "d"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.981963,
+          40.753821
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station_Name": "Times Square-42nd St",
+        "": "d"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.986754,
+          40.754672
+        ]
+      }
+    }
+  ]
+}

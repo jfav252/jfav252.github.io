@@ -1,0 +1,117 @@
+var SixstationsD_json = {
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "Station_Name": "Pelham Bay Park",
+        "": "d"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.828121,
+          40.852462
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station_Name": "Hunts Point Av",
+        "": "d"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.890549,
+          40.820948
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station_Name": "125th St",
+        "": "d"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.937594,
+          40.804138
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station_Name": "51st St",
+        "": "d"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.97192,
+          40.757107
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station_Name": "Grand Central",
+        "": "d"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.979189,
+          40.752769
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station_Name": "28th St",
+        "": "d"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.984264,
+          40.74307
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station_Name": "23rd St",
+        "": "d"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.986599,
+          40.739864
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station_Name": "14th St-Union Square",
+        "": "d"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.989951,
+          40.734673
+        ]
+      }
+    }
+  ]
+}

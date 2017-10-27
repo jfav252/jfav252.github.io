@@ -1,0 +1,522 @@
+var Onestations_json = {
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "Station_Name": "Van Cortlandt Park-242nd St",
+        "D": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.898583,
+          40.889248
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station_Name": "238th St",
+        "D": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.90087,
+          40.884667
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station_Name": "231st St",
+        "D": "D"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.904834,
+          40.878856
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station_Name": "Marble Hill-225th St",
+        "D": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.909831,
+          40.874561
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station_Name": "215th St",
+        "D": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.915279,
+          40.869444
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station_Name": "207th St",
+        "D": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.918819,
+          40.864614
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station_Name": "Dyckman St",
+        "D": "D"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.925536,
+          40.860531
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station_Name": "191st St",
+        "D": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.929412,
+          40.855225
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station_Name": "181st St",
+        "D": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.933596,
+          40.849505
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station_Name": "168th St",
+        "D": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.940133,
+          40.840556
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station_Name": "157th St",
+        "D": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.94489,
+          40.834041
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station_Name": "145th St",
+        "D": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.95036,
+          40.826551
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station_Name": "137th St-City College",
+        "D": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.953676,
+          40.822008
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station_Name": "125th St",
+        "D": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.958372,
+          40.815581
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station_Name": "116th St-Columbia University",
+        "D": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.96411,
+          40.807722
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station_Name": "Cathedral Parkway-110th St",
+        "D": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.966847,
+          40.803967
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station_Name": "103rd St",
+        "D": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.968379,
+          40.799446
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station_Name": "96th St",
+        "D": "D"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.972323,
+          40.793919
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station_Name": "86th St",
+        "D": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.976218,
+          40.788644
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station_Name": "79th St",
+        "D": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.979917,
+          40.783934
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station_Name": "72nd St",
+        "D": "D"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.98197,
+          40.778453
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station_Name": "66th St-Lincoln Center",
+        "D": "D"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.982209,
+          40.77344
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station_Name": "59th St-Columbus Circle",
+        "D": "D"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.981929,
+          40.768247
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station_Name": "50th St",
+        "D": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.983849,
+          40.761728
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station_Name": "Times Square-42nd St",
+        "D": "D"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.986754,
+          40.754672
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station_Name": "34th St",
+        "D": "D"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.991057,
+          40.750373
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station_Name": "28th St",
+        "D": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.993365,
+          40.747215
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station_Name": "23rd St",
+        "D": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.995657,
+          40.744081
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station_Name": "18th St",
+        "D": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.997871,
+          40.74104
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station_Name": "14th St",
+        "D": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.000201,
+          40.737826
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station_Name": "Christopher St",
+        "D": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.002906,
+          40.733422
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station_Name": "Houston St",
+        "D": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.005367,
+          40.728251
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station_Name": "Canal St",
+        "D": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.006277,
+          40.722854
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station_Name": "Franklin St",
+        "D": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.006886,
+          40.719318
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station_Name": "Chambers St",
+        "D": "D"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.009266,
+          40.715478
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station_Name": "Rector St",
+        "D": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.013783,
+          40.707513
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station_Name": "South Ferry"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.013664,
+          40.702068
+        ]
+      }
+    }
+  ]
+}

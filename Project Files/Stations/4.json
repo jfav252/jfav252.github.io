@@ -1,0 +1,634 @@
+var Fourstations_json = {
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "Station_Name": "Woodlawn",
+        "": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.878751,
+          40.886037
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station_Name": "Mosholu Parkway",
+        "": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.884655,
+          40.87975
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station_Name": "Bedford Park Blvd-Lehman College",
+        "": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.890064,
+          40.873412
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station_Name": "Kingsbridge Rd",
+        "": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.897174,
+          40.86776
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station_Name": "Fordham Rd",
+        "": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.901034,
+          40.862803
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station_Name": "183rd St",
+        "": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.903879,
+          40.858407
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station_Name": "Burnside Av",
+        "": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.907684,
+          40.853453
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station_Name": "176th St",
+        "": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.911794,
+          40.84848
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station_Name": "Mt Eden Av",
+        "": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.914685,
+          40.844434
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station_Name": "170th St",
+        "": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.917791,
+          40.840075
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station_Name": "167th St",
+        "": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9214,
+          40.835537
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station_Name": "Yankee Stadium-161st St",
+        "": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.925831,
+          40.827994
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station_Name": "149th St-Grand Concourse",
+        "": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.927351,
+          40.818375
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station_Name": "138th St",
+        "": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.929849,
+          40.813224
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station_Name": "125th St",
+        "": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.937594,
+          40.804138
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station_Name": "116th St",
+        "": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.941617,
+          40.798629
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station_Name": "110th St",
+        "": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.94425,
+          40.79502
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station_Name": "103rd St",
+        "": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.947478,
+          40.7906
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station_Name": "96th Street",
+        "": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.95107,
+          40.785672
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station_Name": "86th St",
+        "": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.955589,
+          40.779492
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station_Name": "68th St - Hunter College",
+        "": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.96387,
+          40.768141
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station_Name": "59th St",
+        "": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.967967,
+          40.762526
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station_Name": "51st St",
+        "": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.97192,
+          40.757107
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station_Name": "Grand Central",
+        "": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.979189,
+          40.752769
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station_Name": "28th St",
+        "": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.984264,
+          40.74307
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station_Name": "23rd St",
+        "": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.986599,
+          40.739864
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station_Name": "14th St-Union Square",
+        "": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.989951,
+          40.734673
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station_Name": "Brooklyn Bridge-City Hall",
+        "": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.004131,
+          40.713065
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station_Name": "Fulton St",
+        "": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.006571,
+          40.709416
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station_Name": "Wall St",
+        "": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.011862,
+          40.707557
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station_Name": "Bowling Green",
+        "": "x"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.014065,
+          40.704817
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station_Name": "Borough Hall",
+        "": "x"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.989998,
+          40.693219
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station_Name": "Nevins St",
+        "": "x"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.980492,
+          40.688246
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station_Name": "Atlantic Av",
+        "": "x"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.97689,
+          40.68446
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station_Name": "Bergen St",
+        "": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.975098,
+          40.680829
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station_Name": "Grand Army Plaza",
+        "": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.971046,
+          40.675235
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station_Name": "Eastern Parkway-Brooklyn Museum",
+        "": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.964375,
+          40.671987
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station_Name": "Franklin Ave",
+        "": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.95809974,
+          40.67076515
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station_Name": "Nostrand Av",
+        "": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.669847,
+          -73.950466
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station_Name": "Kingston Av",
+        "": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.669399,
+          -73.942161
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station_Name": "Utica Av"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.668897,
+          -73.932942
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station_Name": "Franklin Ave",
+        "": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.95809974,
+          40.67076515
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station_Name": "Nostrand Av",
+        "": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.950466,
+          40.669847
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station_Name": "Kingston Av",
+        "": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.942161,
+          40.669399
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station_Name": "Utica Av",
+        "": "d"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.932942,
+          40.668897
+        ]
+      }
+    },
+  ]
+}

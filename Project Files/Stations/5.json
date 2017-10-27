@@ -1,0 +1,565 @@
+var Fivestations_json = {
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "Station_Name": "Eastchester - Dyre Ave",
+        "": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.830834,
+          40.8883
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station_Name": "Baychester Ave",
+        "": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.838591,
+          40.878663
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station_Name": "Gun Hill Rd",
+        "": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.846384,
+          40.869526
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station_Name": "Morris Park",
+        "": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.860495,
+          40.854364
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station_Name": "East 180th St",
+        "": "d"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.873488,
+          40.841894
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station_Name": "East Tremont Av-West Farms Sq",
+        "": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.880049,
+          40.840295
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station_Name": "174th St",
+        "": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.887734,
+          40.837288
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station_Name": "Freeman St",
+        "": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.891865,
+          40.829993
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station_Name": "Simpson St",
+        "": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.893064,
+          40.824073
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station_Name": "Intervale Av",
+        "": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.896736,
+          40.822181
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station_Name": "Prospect Av",
+        "": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.90177,
+          40.819585
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station_Name": "149th St-Grand Concourse",
+        "": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.927351,
+          40.818375
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station_Name": "Jackson Av",
+        "": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.907807,
+          40.81649
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station_Name": "149th St-3rd Av",
+        "": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.917757,
+          40.816109
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station_Name": "138th St",
+        "": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.929849,
+          40.813224
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station_Name": "125th St",
+        "": "d"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.937594,
+          40.804138
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station_Name": "86th St",
+        "": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.955589,
+          40.779492
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station_Name": "68th St - Hunter College",
+        "": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.96387,
+          40.768141
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station_Name": "59th St",
+        "": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.967967,
+          40.762526
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station_Name": "Grand Central",
+        "": "d"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.979189,
+          40.752769
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station_Name": "14th St-Union Square",
+        "": "d"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.989951,
+          40.734673
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station_Name": "Brooklyn Bridge-City Hall",
+        "": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.004131,
+          40.713065
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station_Name": "Fulton St",
+        "": "D"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.006571,
+          40.709416
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station_Name": "Wall St",
+        "": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.011862,
+          40.707557
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station_Name": "Bowling Green",
+        "": "d"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.014065,
+          40.704817
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station_Name": "Borough Hall",
+        "": "d"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.989998,
+          40.693219
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station_Name": "Nevins St",
+        "": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.980492,
+          40.688246
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station_Name": "Atlantic Av",
+        "": "d"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.97689,
+          40.68446
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station_Name": "Bergen St",
+        "": "d"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.975098,
+          40.680829
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station_Name": "Grand Army Plaza",
+        "": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.971046,
+          40.675235
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station_Name": "Eastern Parkway-Brooklyn Museum",
+        "": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.964375,
+          40.671987
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station_Name": "Franklin Ave",
+        "": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.95809974,
+          40.67076515
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station_Name": "Nostrand Av",
+        "": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.950466,
+          40.669847
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station_Name": "President St",
+        "": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.950683,
+          40.667883
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station_Name": "Sterling St",
+        "": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.95085,
+          40.662742
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station_Name": "Winthrop St",
+        "": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9502,
+          40.656652
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station_Name": "Church Av",
+        "": "d"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.949575,
+          40.650843
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station_Name": "Beverly Rd",
+        "": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.948959,
+          40.645098
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station_Name": "Newkirk Av",
+        "": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.948411,
+          40.639967
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station_Name": "Flatbush Av-Brooklyn College",
+        "": "d"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.947642,
+          40.632836
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,452 @@
+var Sixstations_json = {
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "Station_Name": "Pelham Bay Park",
+        "": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.828121,
+          40.852462
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station_Name": "Buhre Av",
+        "": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.832569,
+          40.84681
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station_Name": "Middletown Rd",
+        "": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.836322,
+          40.843863
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station_Name": "Westchester Square-East Tremont Av",
+        "": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.842952,
+          40.839892
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station_Name": "Zerega Av",
+        "": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.847036,
+          40.836488
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station_Name": "Castle Hill Av",
+        "": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.851222,
+          40.834255
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station_Name": "Parkchester-East 177th St",
+        "": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.860816,
+          40.833226
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station_Name": "St Lawrence Av",
+        "": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.867618,
+          40.831509
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station_Name": "Morrison Av-Soundview Av",
+        "": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.874516,
+          40.829521
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station_Name": "Elder Av",
+        "": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.879159,
+          40.828584
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station_Name": "Whitlock Av",
+        "": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.886283,
+          40.826525
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station_Name": "Hunts Point Av",
+        "": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.890549,
+          40.820948
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station_Name": "Longwood Av",
+        "": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.896435,
+          40.816104
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station_Name": "East 149th St",
+        "": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.904098,
+          40.812118
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station_Name": "138th St-3rd Ave",
+        "": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.926138,
+          40.810476
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station_Name": "East 143rd St-St Mary's St",
+        "": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.907657,
+          40.808719
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station_Name": "Brook Av",
+        "": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.91924,
+          40.807566
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station_Name": "Cypress Av",
+        "": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.914042,
+          40.805368
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station_Name": "125th St",
+        "": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.937594,
+          40.804138
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station_Name": "116th St",
+        "": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.941617,
+          40.798629
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station_Name": "110th St",
+        "": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.94425,
+          40.79502
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station_Name": "103rd St",
+        "": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.947478,
+          40.7906
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station_Name": "96th Street",
+        "": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.95107,
+          40.785672
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station_Name": "86th St",
+        "": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.955589,
+          40.779492
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station_Name": "68th St - Hunter College",
+        "": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.96387,
+          40.768141
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station_Name": "59th St",
+        "": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.967967,
+          40.762526
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station_Name": "51st St",
+        "": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.97192,
+          40.757107
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station_Name": "Grand Central",
+        "": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.979189,
+          40.752769
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station_Name": "28th St",
+        "": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.984264,
+          40.74307
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station_Name": "23rd St",
+        "": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.986599,
+          40.739864
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station_Name": "14th St-Union Square",
+        "": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.989951,
+          40.734673
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station_Name": "Brooklyn Bridge-City Hall"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.004131,
+          40.713065
+        ]
+      }
+    }
+  ]
+}

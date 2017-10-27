@@ -9,6 +9,10 @@
 	<script src="data/1 Train.json"></script>
 	<script src="data/2 Train.json"></script>
 	<script src="data/3 Train.json"></script>
+	<script src="data/4 Train.json"></script>
+	<script src="data/5 Train.json"></script>
+	<script src="data/6 Train.json"></script>
+	<script src="data/7 Train.json"></script>
 	
 	<style>
 		body {
@@ -107,17 +111,11 @@
 			margin-right: 8px;
 		}
 		.right-div {
-			float: left;
+			float: right;
 			margin-left: 108px;
+			margin-top: -100px;
 		}
 		
-		.stations {
-			z-index: 1;
-		}
-		
-		.Train {
-			z-index: 2;
-		}
 	</style>
 </head>
 <body>
@@ -153,6 +151,34 @@
 				</tr>
 				<tr>
 					<td><label class="switch">
+						<input id="4_Line_toggle" type="checkbox">
+						<div class="slider round"></div>
+					</label></td>
+					<td><img src="75px-NYCS-bull-trans-1.png" width="50" height="50"></td>
+				</tr>
+				<tr>
+					<td><label class="switch">
+						<input id="5_Line_toggle" type="checkbox">
+						<div class="slider round"></div>
+					</label></td>
+					<td><img src="75px-NYCS-bull-trans-1.png" width="50" height="50"></td>
+				</tr>
+				<tr>
+					<td><label class="switch">
+						<input id="6_Line_toggle" type="checkbox">
+						<div class="slider round"></div>
+					</label></td>
+					<td><img src="75px-NYCS-bull-trans-1.png" width="50" height="50"></td>
+				</tr>
+				<tr>
+					<td><label class="switch">
+						<input id="7_Line_toggle" type="checkbox">
+						<div class="slider round"></div>
+					</label></td>
+					<td><img src="75px-NYCS-bull-trans-1.png" width="50" height="50"></td>
+				</tr>
+				<tr>
+					<td><label class="switch">
 						<input id="AllStations_toggle" type="checkbox">
 						<div class="slider round"></div>
 					</label></td>
@@ -173,7 +199,7 @@
 		
 	
 	
-	<div id="left-div">
+	<div id="left-div" >
 		<div>
 			<script>
 			// Width and Height of the whole visualization
@@ -302,13 +328,80 @@
 				.style('stroke-width', 2)
 				.attr( "class", "line3")
 				.attr( "visibility", "hidden");
+				
+			//line 4 add
 
+			var Train = svg.append( "g" );
+
+			Train.selectAll( "path" )
+				.data( FourTrain_json.features )
+				.enter()
+				.append( "path" )
+				.attr( "d", geoPath )
+				.style('fill', 'none')
+				.style('stroke', 'red')
+				.style('stroke-opacity', 0.75)
+				.style('stroke-width', 2)
+				.attr( "class", "line4")
+				.attr( "visibility", "hidden");
+			
+			//line 5 add
+
+			var Train = svg.append( "g" );
+
+			Train.selectAll( "path" )
+				.data( FiveTrain_json.features )
+				.enter()
+				.append( "path" )
+				.attr( "d", geoPath )
+				.style('fill', 'none')
+				.style('stroke', 'red')
+				.style('stroke-opacity', 0.75)
+				.style('stroke-width', 2)
+				.attr( "class", "line5")
+				.attr( "visibility", "hidden");
+
+			//line 6 add
+
+			var Train = svg.append( "g" );
+
+			Train.selectAll( "path" )
+				.data( SixTrain_json.features )
+				.enter()
+				.append( "path" )
+				.attr( "d", geoPath )
+				.style('fill', 'none')
+				.style('stroke', 'red')
+				.style('stroke-opacity', 0.75)
+				.style('stroke-width', 2)
+				.attr( "class", "line6")
+				.attr( "visibility", "hidden");
+			
+			//line 7 add
+
+			var Train = svg.append( "g" );
+
+			Train.selectAll( "path" )
+				.data( SevenTrain_json.features )
+				.enter()
+				.append( "path" )
+				.attr( "d", geoPath )
+				.style('fill', 'none')
+				.style('stroke', 'red')
+				.style('stroke-opacity', 0.75)
+				.style('stroke-width', 2)
+				.attr( "class", "line7")
+				.attr( "visibility", "hidden");	
 			//switches
 
 			var AllStationsCheckbox = document.querySelector('input[id="AllStations_toggle"]');
 			var Line1Checkbox = document.querySelector('input[id="1_Line_toggle"]');
 			var Line2Checkbox = document.querySelector('input[id="2_Line_toggle"]');
 			var Line3Checkbox = document.querySelector('input[id="3_Line_toggle"]');
+			var Line4Checkbox = document.querySelector('input[id="4_Line_toggle"]');
+			var Line5Checkbox = document.querySelector('input[id="5_Line_toggle"]');
+			var Line6Checkbox = document.querySelector('input[id="6_Line_toggle"]');
+			var Line7Checkbox = document.querySelector('input[id="7_Line_toggle"]');
 			var StationsDCheckbox = document.querySelector('input[id="StationsD_toggle"]');
 
 			AllStationsCheckbox.onchange = function() {
@@ -340,6 +433,39 @@
 				d3.selectAll(".line3").attr("visibility", "visible");
 			  } else {
 				d3.selectAll(".line3").attr("visibility", "hidden");
+			  }
+			};
+				
+			Line4Checkbox.onchange = function() {
+			  if(this.checked) {
+				d3.selectAll(".line4").attr("visibility", "visible");
+			  } else {
+				d3.selectAll(".line4").attr("visibility", "hidden");
+			  }
+			};
+				
+			Line5Checkbox.onchange = function() {
+			  if(this.checked) {
+				d3.selectAll(".line5").attr("visibility", "visible");
+			  } else {
+				d3.selectAll(".line5").attr("visibility", "hidden");
+			  }
+			};
+				
+			Line6Checkbox.onchange = function() {
+			  if(this.checked) {
+				d3.selectAll(".line6").attr("visibility", "visible");
+			  } else {
+				d3.selectAll(".line6").attr("visibility", "hidden");
+			  }
+			};
+				
+			Line7Checkbox.onchange = function() {
+			  if(this.checked) {
+				d3.selectAll(".line7").attr("visibility", "visible");
+				d3.selectAll(".stationsD").attr("visibility", "visible");
+			  } else {
+				d3.selectAll(".line7").attr("visibility", "hidden");
 			  }
 			};
 
